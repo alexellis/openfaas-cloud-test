@@ -3,6 +3,6 @@ provider:
   gateway: http://127.0.0.1:8080
 functions:
   timezone-shift:
-    lang: node10-express
+    lang: node8-express
     handler: ./timezone-shift
     image: timezone-shift:latest-0.3
