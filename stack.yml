@@ -5,4 +5,4 @@ functions:
   timezone-shift:
     lang: node8-express
     handler: ./timezone-shift
-    image: timezone-shift:latest-0.3
+    image: timezone-shift:latest-0.4
