@@ -1,8 +1,9 @@
 provider:
   name: faas
   gateway: http://127.0.0.1:8080
+
 functions:
   timezone-shift:
     lang: node8-express
     handler: ./timezone-shift
-    image: timezone-shift:latest-0.4
+    image: timezone-shift:latest-0.5
