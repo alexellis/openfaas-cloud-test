@@ -1,0 +1,11 @@
+steps:
+## Shinkwrap
+- name 'gcr.io/alexellis/faas-cli:0.8.8'
+  args: [ 'faas-cli', 'build', '--shrinkwrap' ]
+
+## Build Docker image
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/timezone-shift:$REVISION_ID', '-t', 'gcr.io/$PROJECT_ID/timezone-shift:latest', '-f' ,'./build/timezone-shift/Dockerfile', '.' ]
+
+images: 
+  - 'gcr.io/$PROJECT_ID/timezone-shift'
