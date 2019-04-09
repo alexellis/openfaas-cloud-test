@@ -7,3 +7,5 @@ functions:
     lang: node8-express
     handler: ./timezone-shift
     image: timezone-shift:latest-0.5
+    labels:
+      com.openfaas.scale.zero: false
